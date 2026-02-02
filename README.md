@@ -1,2 +1,2 @@
-# Object-oriented-programming-repo
+# Software engineering principles
 to create small and not complex websites
