@@ -1,0 +1,88 @@
+# ---------------------------------
+# Student Test Score Program
+# ---------------------------------
+
+# Student 1
+name1 = "Alice"
+english1 = 12
+maths1 = 10
+science1 = 15
+
+total1 = english1 + maths1 + science1
+average1 = total1 / 3
+
+# Student 2
+name2 = "James"
+english2 = 20
+maths2 = 18
+science2 = 26
+
+total2 = english2 + maths2 + science2
+average2 = total2 / 3
+
+# Student 3
+name3 = "Maria"
+english3 = 30
+maths3 = 25
+science3 = 26
+
+total3 = english3 + maths3 + science3
+average3 = total3 / 3
+
+# ---------------------------------
+# Class-level calculations
+# ---------------------------------
+
+# Class average
+class_average = (average1 + average2 + average3) / 3
+
+# Highest and lowest scorers
+scores = {
+    name1: total1,
+    name2: total2,
+    name3: total3
+}
+
+highest_scorer = max(scores, key=scores.get)
+lowest_scorer = min(scores, key=scores.get)
+
+# ---------------------------------
+# Output Report
+# ---------------------------------
+
+print("========== Student Test Results ==========\n")
+
+print(f"{name1}'s Scores:")
+print(f"  English: {english1}/100")
+print(f"  Maths:   {maths1}/100")
+print(f"  Science: {science1}/100")
+print(f"  Total Score: {total1}/300")
+print(f"  Average Score: {average1:.2f}/100\n")
+
+print(f"{name2}'s Scores:")
+print(f"  English: {english2}/100")
+print(f"  Maths:   {maths2}/100")
+print(f"  Science: {science2}/100")
+print(f"  Total Score: {total2}/300")
+print(f"  Average Score: {average2:.2f}/100\n")
+
+print(f"{name3}'s Scores:")
+print(f"  English: {english3}/100")
+print(f"  Maths:   {maths3}/100")
+print(f"  Science: {science3}/100")
+print(f"  Total Score: {total3}/300")
+print(f"  Average Score: {average3:.2f}/100\n")
+
+print("=============== Summary of Averages ===============")
+print(f"{name1}'s Average: {average1:.2f}/100")
+print(f"{name2}'s Average: {average2:.2f}/100")
+print(f"{name3}'s Average: {average3:.2f}/100")
+print(f"\nClass Average: {class_average:.2f}/100")
+print("===================================================\n")
+
+print("=============== Highest & Lowest Scores ===============")
+print(f"Highest Scorer: {highest_scorer} with {scores[highest_scorer]}/300")
+print(f"Lowest Scorer : {lowest_scorer} with {scores[lowest_scorer]}/300")
+print("=======================================================\n")
+
+print("=============== End of Report ===============")
